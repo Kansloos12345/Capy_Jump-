@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capy Jump! DEMO</title>
+    <link rel="icon" type="image/x-icon" href="./img/orange.png">
+
+    <style>
+        
+        body {
+            background-image: url(./img/capy1.gif);
+            background-size: 100%;
+            image-rendering: pixelated;
+            overflow: hidden;
+        }
+
+        #logo {
+            position: absolute;
+            image-rendering: pixelated;
+            height: 40%;
+            margin-top: 5%;
+            margin-left: 30%;
+        }
+
+        #level {
+            position: absolute;
+            image-rendering: pixelated;
+            height: 6%;
+            width: auto;
+            margin-left: 30%;
+            margin-top: 25%;
+        }
+
+        #plains {
+            position: absolute;
+            margin-left: 30%;
+            margin-top: 32%;
+        }
+
+        #desert {     
+            position: absolute;       
+            margin-left: 45%;
+            margin-top: 32%;
+        }
+
+        #volcano {
+            position: absolute;
+            margin-left: 60%;
+            margin-top: 32%;
+        }
+
+        .levels {
+            image-rendering: pixelated;
+            height: 15%;
+            width: 10%;
+        }
+
+        .levels:hover {
+            transform: scale(0.85);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html">
+        <img id="logo" src="./img/capyjumplogo.png">
+    </a>
+
+    <img id="level" src="./img/level.png">
+
+    <a href="maingame.html" target="_blank">
+        <img id="plains" class="levels" onclick="play()"  src="./img/plains.png">
+    </a>
+
+    <a href="maingame2.html" target="_blank">
+        <img id="desert" class="levels" src="./img/desert.png">
+    </a>
+
+    <a href="maingame3.html" target="_blank">
+        <img id="volcano" class="levels" src="./img/volcano.png">
+    </a>
+
+    <script>
+            function play(){
+        var music = new Audio('../img/lifeofriley.mp3');
+        music.play();
+    }
+    </script>
+    
+</body>
+
+</html>
